@@ -1093,6 +1093,11 @@ form {
 	border-radius: 3px;
 	overflow: hidden;
 }
+.instagram {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
 
 .button {
 	width: 70%;

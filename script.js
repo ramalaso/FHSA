@@ -15,11 +15,6 @@ const layerTo = {
 	ease: 'linear',
 };
 
-window.addEventListener('load', (event) => {
-	son.classList.toggle('s');
-	startAnimation();
-});
-
 const startAnimation = () => {
 	a.loop = true;
 
@@ -34,10 +29,10 @@ const startAnimation = () => {
 	soff.classList.toggle('s');
 };
 
-soff.addEventListener('click', startAnimation);
+// ==============================
+// ==============================
 son.addEventListener('click', startAnimation);
-// ==============================
-// ==============================
+soff.addEventListener('click', startAnimation);
 
 gsap.timeline({ yoyo: true, repeat: -1 })
 	.to('html', { '--bg1': '#131e86', duration: 11.55 })
